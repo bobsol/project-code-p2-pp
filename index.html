@@ -54,11 +54,11 @@
         <div class="row">
           <div class="col-xs-12"> 
             <div class="btn-group" role="group" aria-label="...">
-              <button type="button" class="btn btn-primary btn-lg">Learn more 
+              <button type="button" class="btn btn-primary btn-lg" onclick="bPress(this)">Learn more 
                 <span class="glyphicon glyphicon-magnet" aria-hidden="true"></span></button>
-              <button type="button" class="btn btn-warning btn-lg">Learn less 
+              <button type="button" class="btn btn-warning btn-lg" onclick="bPress(this)">Learn less 
                 <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></button>
-              <button type="button" class="btn btn-danger btn-lg">Nap instead 
+              <button type="button" class="btn btn-danger btn-lg" onclick="bPress(this)">Nap 
                 <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span></button>
             </div>
           </div> <!-- /col -->
@@ -79,29 +79,74 @@
           <div class="col-md-4">
             <img class="img-responsive center-block" src="img/640px-Krokussen_(Crocus),_Locatie,_Tuinreservaat_Jonkervallei.jpg" alt="crocuses">
             <p>Flowering crocuses (Crocus) at the onset of spring in the garden reserve Jonkervallei, Joure, Netherlands.</p>
-            Nested columns....
-            <div class="row">
-              <div class="col-md-2 gray">
-                Column A
-              </div>
-              <div class="col-md-2">
-                Column B
-              </div>
-              <div class="col-md-2 gray">
-                Column C
-              </div>
-              <div class="col-md-2">
-                Column D
-              </div><div class="col-md-2 gray">
-                Column E
-              </div>
-              <div class="col-md-2">
-                Column F
-              </div>
-            </div>
+            
           </div>
         </div> <!-- /row -->
       </div><!-- /well -->
+      <div class="well">
+        <h2>Nested columns....</h2>
+            <div class="row">
+              <div class="col-sm-6 gray">
+                A
+                <div class="row">
+                  <div class="col-xs-6 gray">
+                    Aardvark
+                    <div class="row">
+                      <div class="col-xs-6 gray">
+                        Set
+                      </div>
+                      <div class="col-xs-6 not-gray">
+                        Arthur
+                      </div>
+                    </div> <!--  inner inner row -->
+                  </div>
+                  <div class="col-xs-6 not-gray">
+                    Apple
+                    <div class="row">
+                      <div class="col-xs-6 gray">
+                        Red
+                      </div>
+                      <div class="col-xs-6 not-gray">
+                        Green
+                      </div>
+                    </div> <!--  inner inner row -->
+                  </div>
+                </div> <!-- inner row -->
+              </div> <!-- outer col. -->
+              <div class="col-sm-6">
+                B
+                <div class="row">
+                  <div class="col-xs-6 gray">
+                    Barn
+                    <div class="row">
+                      <div class="col-xs-6 gray">
+                        Red
+                      </div>
+                      <div class="col-xs-6 not-gray">
+                        Gray
+                      </div>
+                    </div> <!--  inner inner row -->
+                  </div>
+                  <div class="col-xs-6">
+                    Badger
+                    <div class="row">
+                      <div class="col-xs-6 gray">
+                        Lazy
+                      </div>
+                      <div class="col-xs-6 not-gray">
+                        Active
+                      </div>
+                    </div> <!--  inner inner row -->
+                  </div>
+                </div>
+              </div>
+            </div> <!-- big row -->
+          </div> <!-- /well -->
+          <div class="panel panel-default">
+            <div class="panel-body">
+              Robert Solomon &copy 2016 NYPL
+            </div>
+          </div>
     </div> <!-- /container -->
     <noscript>Your browser does not support JavaScript!</noscript>
 
@@ -111,6 +156,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>
+    <script src="js/gallery.js"></script>
   </body>
 </html>
 
