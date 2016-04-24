@@ -16,6 +16,11 @@ body, .carousel{
 }
 .gray {
     background-color: #999;
+    color: #fff;
+}
+.not-gray, .panel {
+    background-color: #f5f5f5;
+    color: #000;
 }
 /* changed form padding to margin for shadow effect */
 a img {
@@ -30,9 +35,6 @@ a img {
 /* make the tabs look like tabs... */
 .nav-tabs {
     border-bottom: none;
-}
-.not-gray, .panel {
-    background-color: #f5f5f5;
 }
 .nav-tabs > li.active > a {
     background-color: #f5f5f5;
