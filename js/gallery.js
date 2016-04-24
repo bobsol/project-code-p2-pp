@@ -17,19 +17,24 @@ $(document).ready(function($) {
     $(".shadow img").mouseleave(function() {
         $(this).removeClass("glow");
     });
+    mobileViewUpdate();
+    stupid();
+    //$(window).resize(mobileViewUpdate());
 });
+
+$( window ).resize(mobileViewUpdate);
 
 /* change classes based on viewport, from here:
    https://www.sitepoint.com/community/t/adding-removing-classes-on-resize-jquery/191805/3 
    with a little tinker from me */
-$(window).on('load, resize', function mobileViewUpdate() {
+function mobileViewUpdate() {
     var viewportWidth = $(window).width();
     if (viewportWidth < 500) {
         $(".btn-group").removeClass("btn-group").addClass("btn-group-xs")
     }else{
         $(".btn-group-xs").removeClass("btn-group-xs").addClass("btn-group")
     }
-});
+}
 
 // disappear buttons
 function bPress(which) {
